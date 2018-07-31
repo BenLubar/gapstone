@@ -8,6 +8,7 @@ go:
 sudo: false
 before_install:
   - ./genconst capstone/bindings/python/capstone
+  - make -C capstone
   - ./genspec capstone/tests
 notifications:
   email:
